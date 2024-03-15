@@ -232,7 +232,8 @@ for epoch in range(num_epochs):
     p = sigmoid(z)
 
     # Compute Binary Cross-Entropy Loss
-    loss = - (y * np.log(p) + (1 - y) * np.log(1 - p))
+    loss = - (y * np.log(p) + (1 - y) * 
+            np.log(1 - p))
 
     # Backpropagation
     dz = p - y
@@ -248,7 +249,8 @@ for epoch in range(num_epochs):
         print(f'Epoch {epoch}: Loss = {loss}')
 
 # Print optimized parameters
-print(f'Optimized parameters: w = {w}, b = {b}')</code></pre>
+print(f'Optimized parameters:
+w = {w},b = {b}')</code></pre>
     </div>
 <div class="container">
         <h1>Code Analysis: Binary Cross-Entropy Loss Optimization</h1>
